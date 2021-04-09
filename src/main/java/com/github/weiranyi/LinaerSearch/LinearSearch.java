@@ -1,10 +1,14 @@
 package com.github.weiranyi.LinaerSearch;
 
 /**
- * 内容：线性查找算法
- * 输入：数组和目标元素
- * 输出：目标元素和索引；若不存在返回-1
+ * @author: https://github.com/weiranyi
+ * @description - 内容：线性查找算法
+ * - 输入：数组和目标元素
+ * - 输出：目标元素和索引；若不存在返回-1
+ * @date: 2021/4/9 1:12 下午
+ * @Version 1.0
  */
+
 
 public class LinearSearch {
     //将对象私有化，不让外界生成对象
@@ -13,13 +17,13 @@ public class LinearSearch {
 
     /**
      * - 使用static关键字的原因是因为，将这段代码变成工具类代码，
-     *   不需要创建对象，使该方法可以直接被使用。
+     * 不需要创建对象，使该方法可以直接被使用。
      * - 使用泛型的原因是因为，提高代码的复用。但是泛型只能接受类
-     *   对象，基本数据类型要用装箱数据类型
+     * 对象，基本数据类型要用装箱数据类型
      * - 包装类：
-     *   java的八大数据类型中除了char、int外其他首字母大写就是包装类
-     *   char -> Character
-     *   int -> Integer
+     * java的八大数据类型中除了char、int外其他首字母大写就是包装类
+     * char -> Character
+     * int -> Integer
      *
      * @param data
      * @param target
