@@ -1,6 +1,6 @@
 package com.github.weiranyi.LinaerSearch;
 
-import java.util.Locale;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * @author: https://github.com/weiranyi
@@ -17,6 +17,8 @@ public class Student {
 
     //重写equals方法
     @Override
+    // 压制hashCode的错
+    @SuppressFBWarnings("HE_EQUALS_USE_HASHCODE")
     public boolean equals(Object student) {
         if (student == null) {
             return false;

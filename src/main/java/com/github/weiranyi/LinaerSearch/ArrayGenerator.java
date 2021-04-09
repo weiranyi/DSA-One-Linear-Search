@@ -13,8 +13,9 @@ public class ArrayGenerator {
     public static Integer[] generateOrderedArray(int n) {
         // 开辟用户制定的数组个数
         Integer[] arr = new Integer[n];
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) {
             arr[i] = i;
+        }
         return arr;
     }
 }

@@ -13,17 +13,17 @@ public class SmokeTest {
          */
         // 设置问题规模
         int[] dataSize = {1000, 1000_000};
-        for (int n:dataSize) {
+        for (int n : dataSize) {
             // 测试LinearSearch中的线性查找算法
             Integer[] data = ArrayGenerator.generateOrderedArray(n);
             long startTime = System.nanoTime();
             // 通过循环进行多次查找会让性能稳定
             for (int k = 0; k < 100; k++) {
-                LinearSearch.search(data,n);
+                LinearSearch.search(data, n);
             }
             long endTime = System.nanoTime();
             double time = (endTime - startTime) / 1000000000.0;
-            System.out.println("对于"+n+"个数据"+"，运行100次，耗时："+time + "s" +";");
+            System.out.println("对于" + n + "个数据" + "，运行100次，耗时：" + time + "s" + ";");
         }
         /**
          * 2、测试：通过自定义类测试
